@@ -1,0 +1,2 @@
+cnn.h5: inoptimised; low convolutions; reduced input size from original; many dense layers; high accuracy in train, valid and test set, but fails in real world tests. 
+cnn_1702836567.371856.h5: high and structured convolutions; one dense layer only in the output; reduced input size from original; shows zero validation accuracy, 
