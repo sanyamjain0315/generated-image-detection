@@ -1,2 +1,3 @@
 cnn.h5: inoptimised; low convolutions; reduced input size from original; many dense layers; high accuracy in train, valid and test set, but fails in real world tests. 
-cnn_1702836567.371856.h5: high and structured convolutions; one dense layer only in the output; reduced input size from original; shows zero validation accuracy, 
+cnn_1702836567.371856.h5: high and structured convolutions; one dense layer only in the output; reduced input size from original; Training images fed to it had rotation range of 45; shows zero validation accuracy.
+models\cnn_1702919691.332223.h5: highly structured depthwise-pointwise convolutions in latter half of network; one dense neuron in the output layer; full size images; basically no training hapenned to the model, maybe the reason is that there are no dense neurons in the hidden layers.
