@@ -127,6 +127,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.env-cpu
+.env-gpu
+.env-gpu-latest
 
 # Spyder project settings
 .spyderproject
