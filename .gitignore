@@ -166,4 +166,4 @@ cython_debug/
 data
 
 # Models, since they will be big
-models\cnn_very_simple.h5
+models
