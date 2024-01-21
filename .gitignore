@@ -163,7 +163,7 @@ cython_debug/
 #.idea/
 
 # Datasets
-data
+real_vs_fake
 
 # Models, since they will be big
 models
