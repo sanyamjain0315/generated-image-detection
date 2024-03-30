@@ -164,6 +164,7 @@ cython_debug/
 
 # Datasets
 real_vs_fake
+discriminator_data
 
 # Models, since they will be big
 models
