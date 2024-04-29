@@ -166,6 +166,8 @@ cython_debug/
 real_vs_fake
 discriminator_data
 training.zip
+resnet_data
+
 # Models, since they will be big
 models
 training
