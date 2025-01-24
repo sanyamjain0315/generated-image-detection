@@ -167,7 +167,10 @@ real_vs_fake
 discriminator_data
 training.zip
 resnet_data
+.zip
 
 # Models, since they will be big
 models
 training
+
+logs/
