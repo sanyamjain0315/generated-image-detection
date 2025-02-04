@@ -7,7 +7,7 @@ export const verifyToken=(req,res,next)=>{
     }    
     try{
 const decoded =  jwt.verify(token,process.env.JWT_SECRET)
-// console.log("decode token :-",decoded)
+console.log("decode token :-",decoded)
 if(!decoded.UserId){
     return res.status(401).json({success:false,message:"Unauthorized - Invalid token"});
 }
