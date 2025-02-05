@@ -1,23 +1,43 @@
+// import dotenv from "dotenv";
+// import { MailtrapClient } from "mailtrap";
+
+// // Load environment variables
+// dotenv.config();
+
+// const TOKEN = process.env.MAILTRAP_API_TOKEN;
+
+// if (!TOKEN) {
+//   console.error("❌ Mailtrap API token is missing! Check your .env file.");
+//   process.exit(1);
+// }
+
+// export const mailtrapClient = new MailtrapClient({
+//   token: TOKEN,
+//   endpoint: "https://send.api.mailtrap.io",
+// });
+
+// export const sender = {
+//   email: "hello@demomailtrap.com",
+//   name: "Dashrath",
+// };
+
+// mailerConfig.js
+import nodemailer from "nodemailer";
 import dotenv from "dotenv";
-import { MailtrapClient } from "mailtrap";
 
 // Load environment variables
 dotenv.config();
 
-const TOKEN = process.env.MAILTRAP_API_TOKEN;
-
-if (!TOKEN) {
-  console.error("❌ Mailtrap API token is missing! Check your .env file.");
-  process.exit(1);
-}
-
-export const mailtrapClient = new MailtrapClient({
-  token: TOKEN,
-  endpoint: "https://send.api.mailtrap.io",
+const transporter = nodemailer.createTransport({
+  host: "sandbox.smtp.mailtrap.io", // Mailtrap SMTP server host
+  port: 2525, // Port for TLS
+  auth: {
+    user: process.env.MAILTRAP_USER, // Your Mailtrap username
+    pass: process.env.MAILTRAP_PASS, // Your Mailtrap password
+  },
 });
 
-export const sender = {
-  email: "hello@demomailtrap.com",
-  name: "Dashrath",
-};
+export default transporter;
+
+
 
