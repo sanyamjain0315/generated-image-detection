@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from "react-router-dom";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
@@ -15,6 +16,7 @@ import EmailVerificationPage from "./pages/EmailVerificationPage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
 import FloatingShape from "./components/FloatingShape";
 import AstronautSpinner from "./components/AstronautSpinner";
+import DashboardPage from "./pages/DashboardPage"
 
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
@@ -36,7 +38,7 @@ const ProtectedRoute = ({ children }) => {
 const RedirectAuthenticatedUser = ({ children }) => {
   const { isAuthenticated, user } = useAuthStore();
   if (isAuthenticated && user.isVerified) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/dashboard" replace />;
   }
   return children;
 };
@@ -79,6 +81,14 @@ const AppContent = () => {
             </>
           }
         />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardPage/>
+          </ProtectedRoute>
+          }
+        />
 
         {/* Routes for unauthenticated users */}
         <Route
@@ -107,11 +117,9 @@ const AppContent = () => {
           }
         />
         <Route
-          path="/reset-password"
+          path="/reset-password/:token"
           element={
-            <RedirectAuthenticatedUser>
               <ResetPasswordPage />
-            </RedirectAuthenticatedUser>
           }
         />
 
