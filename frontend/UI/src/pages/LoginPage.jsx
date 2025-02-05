@@ -4,6 +4,7 @@ import { Mail, Lock, Loader } from "lucide-react";
 import { Link } from "react-router-dom";
 import Input from "../components/Input";
 import { useAuthStore } from "../store/authStore";
+import toast from "react-hot-toast";
 
 const LoginPage = () => {
 	const [email, setEmail] = useState("");
@@ -14,6 +15,7 @@ const LoginPage = () => {
 	const handleLogin = async (e) => {
 		e.preventDefault();
 		await login(email, password);
+		toast.success("Logged In successfully")
 	};
 
 	return (
@@ -66,7 +68,7 @@ const LoginPage = () => {
 				</div>
 				<div className="flex justify-center px-8 py-4 bg-gray-900 bg-opacity-50">
 					<p className="text-sm text-gray-400">
-						Don't have an account?{" "}
+						Don&apos;t have an account?{" "}
 						<Link to="/signup" className="text-green-400 hover:underline">
 							Sign up
 						</Link>
