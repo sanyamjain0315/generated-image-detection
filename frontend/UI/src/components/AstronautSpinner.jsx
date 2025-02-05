@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./AstronautSpinner.css"; // Import the CSS file
 
 const AstronautSpinner = () => {
