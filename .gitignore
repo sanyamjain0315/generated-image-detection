@@ -164,6 +164,3 @@ cython_debug/
 
 # Datasets
 real_vs_fake
-
-# Models, since they will be big
-models
