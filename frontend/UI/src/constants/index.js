@@ -1,3 +1,4 @@
+
 import {
   benefitIcon1,
   benefitIcon2,
@@ -7,13 +8,13 @@ import {
   chromecast,
   disc02,
   discord,
-  discordBlack,
-  facebook,
+
+
   figma,
   file02,
   framer,
   homeSmile,
-  instagram,
+
   notification2,
   notification3,
   notification4,
@@ -31,9 +32,10 @@ import {
   searchMd,
   slack,
   sliders04,
-  telegram,
+
   twitter,
   yourlogo,
+  github,
 } from "../assets";
 
 export const navigation = [
@@ -43,20 +45,16 @@ export const navigation = [
     url: "#features",
   },
   {
-    id: "1",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
     title: "Roadmap",
     url: "#roadmap",
   },
+  {
+    id: "3",
+    title: "How to use",
+    url: "#how-to-use",
+  },
+ 
   {
     id: "4",
     title: "New account",
@@ -78,9 +76,9 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Image Detection",
+  "Image Analysis",
+  "AI-Generated Probability",
 ];
 
 export const brainwaveServicesIcons = [
@@ -94,8 +92,8 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+    title: "AI-Powered Image Detection",
+    text: "Develop and deploy an AI model that analyzes images to detect whether they are AI-generated or authentic.",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap1,
@@ -103,48 +101,52 @@ export const roadmap = [
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
+    title: "User Dashboard & Image Upload",
+    text: "Create a user-friendly dashboard where users can log in, upload images, and receive AI-based authenticity results.",
+    date: "July 2023",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
+    title: "FastAPI Backend Integration",
+    text: "Integrate FastAPI with the backend to efficiently serve the AI model and provide fast image analysis results.",
+    date: "September 2023",
     status: "done",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
+    title: "Improved Model Accuracy",
+    text: "Enhance the AI model using deep learning techniques to improve the accuracy and reliability of AI-generated image detection.",
+    date: "November 2023",
     status: "progress",
     imageUrl: roadmap4,
   },
 ];
 
+
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "With advanced AI automation and robust security, our solution ensures seamless and efficient image authenticity detection.";
 
 export const collabContent = [
-  {
-    id: "0",
-    title: "Seamless Integration",
-    text: collabText,
-  },
-  {
-    id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
-  },
-];
+    {
+      id: "0",
+      title: "Advanced Image Analysis",
+      text: "Leverage AI-powered algorithms to analyze and verify image authenticity with precision.",
+    },
+    {
+      id: "1",
+      title: "Real-time Detection",
+      text: "Instantly detect AI-generated images with our cutting-edge detection model.",
+    },
+    {
+      id: "2",
+      title: "Secure & Reliable",
+      text: "Ensure data privacy and security while analyzing images efficiently.",
+    },
+  ];
+  
 
 export const collabApps = [
   {
@@ -205,41 +207,6 @@ export const collabApps = [
   },
 ];
 
-export const pricing = [
-  {
-    id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-];
 
 export const benefits = [
   {
@@ -296,12 +263,6 @@ export const benefits = [
 
 export const socials = [
   {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
@@ -309,20 +270,11 @@ export const socials = [
   },
   {
     id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
+    title: "Github",
+    iconUrl: github,
+    url: "https://github.com/ULTRAPAIN",
   },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
+
+
+
 ];

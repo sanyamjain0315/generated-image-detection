@@ -171,3 +171,4 @@ models
 #Javascript Ignore files
 node_modules
 .gitignore
+.qodo

@@ -4,8 +4,8 @@
   "description": "Research on utilising GANs to discern between real and fake images",
   "main": "backend/index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon backend/index.js",
-    "start": "cross-env NODE_ENV=production node backend/index.js",
+    "dev": "NODE_ENV=development nodemon backend/index.js",
+    "start": "NODE_ENV=production node backend/index.js",
     "build": "npm install && npm install --prefix frontend/UI && npm run build --prefix frontend/UI"
   },
   "keywords": [],
