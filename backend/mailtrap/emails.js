@@ -90,7 +90,7 @@ export const sendVerificationEmail = async (email, verificationToken) => {
 //   const recipient = [{ email }];
   try {
     const response = await transporter.sendMail({
-      from: `<hello@demomailtrap.com>`,
+      from: '"Dashrath" <hello@demomailtrap.com>',
       to: email,
       subject: "Verify your Email",
       html: VERIFICATION_EMAIL_TEMPLATE.replace("{verificationCode}", verificationToken),
@@ -109,7 +109,7 @@ export const sendWelcomeEmail = async (email, name) => {
 //   const recipient = [{ email }];
   try {
     const response = await transporter.sendMail({
-      from: `"Dashrath" <hello@demomailtrap.com>`,
+      from: '"Dashrath" <hello@demomailtrap.com>',
       to: email,
       subject: "Welcome to our platform",
       html: `<p>Welcome ${name},</p><p>Thank you for signing up!</p>`,
@@ -128,7 +128,7 @@ export const sendPasswordResetEmail = async (email, resetURL) => {
 //   const recipient = [{ email }];
   try {
     const response = await transporter.sendMail({
-      from:`"Dashrath" <hello@demomailtrap.com>`,
+      from:'"Dashrath" <hello@demomailtrap.com>',
       to: email,
       subject: "Reset your password",
       html: PASSWORD_RESET_REQUEST_TEMPLATE.replace("{resetURL}", resetURL),
@@ -147,7 +147,7 @@ export const sendResetSuccessEmail = async (email) => {
 //   const recipient = [{ email }];
   try {
     const response = await transporter.sendMail({
-      from: `"Dashrath" <hello@demomailtrap.com>`,
+      from: '"Dashrath" <hello@demomailtrap.com>',
       to: email,
       subject: "Password Reset Successfully",
       html: PASSWORD_RESET_SUCCESS_TEMPLATE,

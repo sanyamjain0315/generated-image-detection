@@ -31,10 +31,15 @@ dotenv.config();
 const transporter = nodemailer.createTransport({
   host: "sandbox.smtp.mailtrap.io", // Mailtrap SMTP server host
   port: 2525, // Port for TLS
+  secure: false,
   auth: {
     user: process.env.MAILTRAP_USER, // Your Mailtrap username
     pass: process.env.MAILTRAP_PASS, // Your Mailtrap password
   },
+  tls: {
+    // do not fail on invalid certs
+    rejectUnauthorized: false
+  }
 });
 
 export default transporter;

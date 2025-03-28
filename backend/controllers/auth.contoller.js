@@ -1,7 +1,7 @@
 import bcryptjs from "bcryptjs";
 import crypto from "crypto";
 import dotenv from "dotenv";
-dotenv.config();
+dotenv.config({ path: "../.env" });
 import { generateVerificationCode } from '../utils/generateVerificationCode.js';
 import { generateTokenAndSetCookie } from '../utils/generateTokenAndSetCookie.js';
 import {sendVerificationEmail} from '../mailtrap/emails.js'
