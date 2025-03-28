@@ -16,8 +16,8 @@ const Services = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="AI-Powered Creativity"
-          text="Unleashing the power of AI-driven applications"
+          title="AI Detection Technology"
+          text="Unveiling the truth behind AI-generated images with precision"
         />
 
         <div className="relative">
@@ -26,16 +26,16 @@ const Services = () => {
               <img
                 className="object-cover w-full h-full md:object-right"
                 width={800}
-                alt="Smartest AI"
+                alt="AI Detection"
                 height={730}
                 src={service1}
               />
             </div>
 
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="mb-4 h4">Smartest AI</h4>
+              <h4 className="mb-4 h4">Advanced Detection</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-              AI Vision reveals the power of AI-driven image authenticity analysis.
+                Our AI Detective reveals hidden patterns in AI-generated images with unmatched accuracy.
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
@@ -61,14 +61,14 @@ const Services = () => {
                   className="object-cover w-full h-full"
                   width={630}
                   height={750}
-                  alt="robot"
+                  alt="Image Analysis"
                 />
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="mb-4 h4">Photo editing</h4>
+                <h4 className="mb-4 h4">Image Analysis</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                Effortlessly analyze and detect AI-generated images with our cutting-edge AI detection tool. Try it now
+                  Instantly verify the authenticity of any image with our repurposed GAN discriminator technology.
                 </p>
               </div>
 
@@ -77,9 +77,9 @@ const Services = () => {
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="px-4 py-12 xl:px-8">
-                <h4 className="mb-4 h4">Video generation</h4>
+                <h4 className="mb-4 h4">Multi-Model Detection</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The advanced AI for detecting AI-generated images. Try it now!
+                  Our system detects images from various AI models with high precision and minimal computational cost.
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -112,7 +112,7 @@ const Services = () => {
                   className="object-cover w-full h-full"
                   width={520}
                   height={400}
-                  alt="Scary robot"
+                  alt="AI Image Detection"
                 />
 
                 <VideoChatMessage />

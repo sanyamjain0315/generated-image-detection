@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Lock, Loader } from "lucide-react";
 import { Link } from "react-router-dom";
-import Input from "../components/Input";
+import Input from "../components/input";
 import { useAuthStore } from "../store/authStore";
 import toast from "react-hot-toast";
 

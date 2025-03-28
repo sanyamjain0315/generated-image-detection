@@ -23,9 +23,9 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="mb-6 h1">
-          Uncover the Truth Behind Every Image with AI Precision{` `}
+            AI Image Detection{` `}
             <span className="relative inline-block">
-              Brainwave{" "}
+              Detective{" "}
               <img
                 src={curve}
                 className="absolute left-0 w-full top-full xl:-mt-2"
@@ -36,10 +36,10 @@ const Hero = () => {
             </span>
           </h1>
           <p className="max-w-3xl mx-auto mb-6 body-1 text-n-2 lg:mb-8">
-          Detect AI-Generated Images with our Trained Models
+            Instantly identify AI-generated imagery with our cutting-edge detection technology powered by repurposed GAN discriminators
           </p>
           <Button href="/pricing" white>
-            Get started
+            Try It Now
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -53,7 +53,7 @@ const Hero = () => {
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
                   width={1024}
                   height={490}
-                  alt="AI"
+                  alt="AI Detection"
                 />
 
                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
@@ -71,7 +71,7 @@ const Hero = () => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    title="AI Detection in Progress"
                   />
                 </ScrollParallax>
               </div>
@@ -85,7 +85,7 @@ const Hero = () => {
               className="w-full"
               width={1440}
               height={1800}
-              alt="hero"
+              alt="hero background"
             />
           </div>
 
