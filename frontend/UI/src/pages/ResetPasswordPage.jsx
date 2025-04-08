@@ -35,7 +35,7 @@ const ResetPasswordPage = () => {
 	};
 
 	return (
-		<div className="flex justify-center item-center">
+		<div className=" m-32 flex justify-center item-center ">
 		<motion.div
 			initial={{ opacity: 0, y: 20 }}
 			animate={{ opacity: 1, y: 0 }}

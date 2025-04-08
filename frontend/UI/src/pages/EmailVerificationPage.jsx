@@ -63,7 +63,7 @@ const EmailVerificationPage = () => {
 	}, [code]);
 
 	return (
-		<div className="flex justify-center item-center">
+		<div className="mt-32 flex justify-center item-center">
 		<div className='w-full max-w-md overflow-hidden bg-gray-800 bg-opacity-50 shadow-xl backdrop-filter backdrop-blur-xl rounded-2xl'>
 			<motion.div
 				initial={{ opacity: 0, y: -50 }}
