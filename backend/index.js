@@ -7,7 +7,7 @@ import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
 // Import ChatOpenAI from LangChain
-import { ChatOpenAI } from "langchain/chat_models/openai";
+// import { ChatOpenAI } from "langchain/chat_models/openai";
 
 dotenv.config({ path: path.resolve(process.cwd(), "../.env") });
 
