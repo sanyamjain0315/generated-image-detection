@@ -59,7 +59,7 @@ const AppContent = () => {
   const authRoutes = ["/signup", "/login", "/forgot-password", "/verify-email", "/reset-password"];
 
   return (
-    <div className="pt-[4.75rem] lg:pt-[10.25rem] overflow-hidden">
+    <div className=" overflow-hidden">
       {/* Show FloatingShapes only on auth pages */}
       {authRoutes.some((route) => location.pathname.startsWith(route)) && <AuthFloatingShapes />}
 
